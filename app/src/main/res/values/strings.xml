@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lottery Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lottery__main">Lottery_Main</string>
+    <string name="title_activity_powerball__main">Powerball_Main</string>
+    <string name="title_activity_final__screen">Final_Screen</string>
+</resources>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zacharybernas.lotteryapplication.Powerball_Main"
+    tools:layout_editor_absoluteY="73dp"
+    tools:showIn="@layout/activity_powerball__main">
+
+    <TextView
+        android:id="@+id/powerball_Num"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:fontFamily="serif"
+        android:text="Pick Your Powerball!"
+        android:textAlignment="center"
+        android:textColor="#ffca45"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/gen_powerball"
+        android:layout_width="154dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="Are You Lucky?"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="1"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="2"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="3"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb2"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="4"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb3"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="5"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb4"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="6"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb5"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="7"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb6"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="8"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb7"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="9"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb8"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="10"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb9"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="11"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb10"
+        app:layout_constraintTop_toBottomOf="@+id/powerball_Num" />
+
+    <CheckBox
+        android:id="@+id/cb12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="12"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb1" />
+
+    <CheckBox
+        android:id="@+id/cb13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="13"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb12"
+        app:layout_constraintTop_toBottomOf="@+id/cb2" />
+
+    <CheckBox
+        android:id="@+id/cb14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="14"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb13"
+        app:layout_constraintTop_toBottomOf="@+id/cb3" />
+
+    <CheckBox
+        android:id="@+id/cb15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="15"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb14"
+        app:layout_constraintTop_toBottomOf="@+id/cb4" />
+
+    <CheckBox
+        android:id="@+id/cb16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="16"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb15"
+        app:layout_constraintTop_toBottomOf="@+id/cb5" />
+
+    <CheckBox
+        android:id="@+id/cb17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="17"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb16"
+        app:layout_constraintTop_toBottomOf="@+id/cb6" />
+
+    <CheckBox
+        android:id="@+id/cb18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="18"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb17"
+        app:layout_constraintTop_toBottomOf="@+id/cb7" />
+
+    <CheckBox
+        android:id="@+id/cb19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="19"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb20"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb18"
+        app:layout_constraintTop_toBottomOf="@+id/cb8" />
+
+    <CheckBox
+        android:id="@+id/cb20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="20"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb19"
+        app:layout_constraintTop_toBottomOf="@+id/cb9" />
+
+    <CheckBox
+        android:id="@+id/cb21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="21"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb20"
+        app:layout_constraintTop_toBottomOf="@+id/cb10" />
+
+    <CheckBox
+        android:id="@+id/cb22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="22"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb21"
+        app:layout_constraintTop_toBottomOf="@+id/cb11" />
+
+    <CheckBox
+        android:id="@+id/cb23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="23"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb12" />
+
+    <CheckBox
+        android:id="@+id/cb24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="24"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb25"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb23"
+        app:layout_constraintTop_toBottomOf="@+id/cb13" />
+
+    <CheckBox
+        android:id="@+id/cb25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="25"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/cb26"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb24"
+        app:layout_constraintTop_toBottomOf="@+id/cb14" />
+
+    <CheckBox
+        android:id="@+id/cb26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/holo_red_light"
+        android:text="26"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintEnd_toStartOf="@+id/gen_powerball"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb25"
+        app:layout_constraintTop_toBottomOf="@+id/cb15" />
+
+</android.support.constraint.ConstraintLayout>
